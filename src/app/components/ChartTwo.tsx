@@ -132,7 +132,7 @@ const ChartTwo: React.FC = () => {
                   aria-expanded="true"
                   aria-haspopup="true"
                 >
-                  <p className="text-white">Weekly</p>
+                  <span className="text-white">Weekly</span>
                   <svg
                     className="-mr-1 h-5 w-5 text-white"
                     viewBox="0 0 20 20"
@@ -193,7 +193,6 @@ const ChartTwo: React.FC = () => {
             </div>
           </div>
         </div>
-        <div></div>
       </div>
 
       <div>

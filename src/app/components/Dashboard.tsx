@@ -77,7 +77,7 @@ const dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between rounded bg-gray-700 shadow-xl sm:col-span-6 md:col-span-12 lg:col-span-4 p-3 relative h-28">
+        <div className="flex justify-between rounded bg-gray-700 shadow-xl sm:col-span-12 md:col-span-12 lg:col-span-4 p-3 relative h-28">
           <div className="ml-0">
             <span className="text-white text-xs">Net Profit</span>
             <div className="">
@@ -106,10 +106,10 @@ const dashboard = () => {
       </div>
 
       <div className="grid gap-4 m-2 sm:grid-cols-12">
-        <div className="rounded bg-gray-700 shadow-xl sm:col-span-12 lg:col-span-8 relative h-80">
+        <div className="rounded bg-gray-700 shadow-xl sm:col-span-12 md:col-span-12 lg:col-span-8 relative h-80">
           <TableOne />
         </div>
-        <div className="rounded bg-gray-700 shadow-xl sm:col-span-12 lg:col-span-4 relative h-80 overflow-auto">
+        <div className="rounded bg-gray-700 shadow-xl sm:col-span-12 md:col-span-12 lg:col-span-4 relative h-80 overflow-auto">
           <Reviews />
         </div>
       </div>

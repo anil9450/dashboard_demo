@@ -91,21 +91,21 @@ const TableOne = () => {
                     className="rounded-full"
                   />
                 </div>
-                <p className="hidden font-medium text-dark dark:text-white sm:block">
+                <span className="hidden font-medium text-dark dark:text-white sm:block">
                   {brand.name}
-                </p>
+                </span>
               </div>
 
               <div className="flex items-center justify-center px-2 py-0">
-                <p className="font-medium text-dark dark:text-white">
+                <span className="font-medium text-dark dark:text-white">
                   {brand.visitors}
-                </p>
+                </span>
               </div>
 
               <div className="flex items-center justify-center px-2 py-0">
-                <p className="font-medium text-green-light-1">
+                <span className="font-medium text-green-light-1">
                   ${brand.revenues}
-                </p>
+                </span>
               </div>
 
               <div className="hidden items-center justify-center px-2 py-0 sm:flex">

@@ -14,7 +14,7 @@ const ChatCard = () => {
           <MdGpsFixed className="w-9 h-9 text-red-700 bg-red-100 rounded-full p-1" />
         </div>
         <div className="col-span-8 text-white">
-          <p className="text-sm mt-2">Goals</p>
+          <span className="text-sm mt-2">Goals</span>
         </div>
         <div className="col-span-2">
           <IoIosArrowDropright className="w-6 h-6 text-white bg-gray-600 rounded-full p-1" />
@@ -26,7 +26,7 @@ const ChatCard = () => {
           <CiBurger className="w-9 h-9 text-blue-700 bg-blue-200 rounded-full p-1" />
         </div>
         <div className="col-span-8 text-white">
-          <p className="text-sm mt-2">Popular Dishes</p>
+          <span className="text-sm mt-2">Popular Dishes</span>
         </div>
         <div className="col-span-2">
           <IoIosArrowDropright className="w-6 h-6 text-white bg-gray-600 rounded-full p-1" />
@@ -38,7 +38,7 @@ const ChatCard = () => {
           <BiSolidDish className="w-9 h-9 text-cyan-700 bg-cyan-100 rounded-full p-1" />
         </div>
         <div className="col-span-8 text-white">
-          <p className="text-sm mt-2">Menus</p>
+          <span className="text-sm mt-2">Menus</span>
         </div>
         <div className="col-span-2">
           <IoIosArrowDropright className="w-6 h-6 text-white bg-gray-600 rounded-full p-1" />
