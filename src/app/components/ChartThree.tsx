@@ -29,7 +29,7 @@ const ChartThree: React.FC = () => {
             total: {
               show: true,
               showAlways: true,
-              label: ["70%"],
+              label: "70%",
               fontSize: "10px",
               fontWeight: "bold",
               color: "white",
@@ -78,7 +78,7 @@ const ChartThree: React.FC = () => {
           hollow: {
             margin: 25,
             imageWidth: 550,
-            imageHeight: 550,
+            imageHeight: 150,
             size: "50%",
           },
           dataLabels: {
@@ -116,7 +116,7 @@ const ChartThree: React.FC = () => {
       <div className="">
         <div className="relative h-36 w-36">
           <ReactApexChart
-            options={apexOptions.options}
+            options={apexOptions.options as any}
             series={apexOptions.series}
             type="radialBar"
             height=""

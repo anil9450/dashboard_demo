@@ -1,21 +1,26 @@
 import React from "react";
+import Image from "next/image";
 
 const Reviews = () => {
   return (
     <div>
       <section>
         <div className="mx-auto sm:px-6">
-          <h2 className="text-sm font-bold text-white">Customer's Feedback </h2>
+          <h2 className="text-sm font-bold text-white">
+            Customer&apos;s Feedback{" "}
+          </h2>
           <div className="lg:flex grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4">
             <div className="swiper-wrapper">
               <div className="swiper-slide group bg-gray-700 border border-solid border-gray-700 rounded-2xl p-2 transition-all duration-500 w-full hover:border-gray-700 slide-active:border-gray-700">
                 <div className="flex justify-between">
                   <div className="">
                     <div className="flex items-center gap-2">
-                      <img
+                      <Image
                         className="rounded-full w-7 h-7"
                         src="https://pagedone.io/asset/uploads/1696229969.png"
                         alt="avatar"
+                        width={10}
+                        height={10}
                       />
                       <div className="grid gap-1">
                         <h5 className="text-[10px] text-white transition-all duration-500  group-hover:text-white swiper-slide-active:text-white">
@@ -100,10 +105,12 @@ const Reviews = () => {
               </div>
               <div className="swiper-slide group bg-gray-700 border border-solid border-gray-700 rounded-2xl p-2 transition-all duration-500 w-full hover:border-gray-700 slide-active:border-gray-700">
                 <div className="flex items-center gap-2">
-                  <img
+                  <Image
                     className="rounded-full w-7 h-7"
                     src="https://pagedone.io/asset/uploads/1696229969.png"
                     alt="avatar"
+                    width={10}
+                    height={10}
                   />
                   <div className="grid gap-1">
                     <h5 className="text-[10px] text-white transition-all duration-500  group-hover:text-white swiper-slide-active:text-white">
@@ -178,10 +185,12 @@ const Reviews = () => {
               </div>
               <div className="swiper-slide group bg-gray-700 border border-solid border-gray-700 rounded-2xl p-2 transition-all duration-500 w-full hover:border-gray-700 slide-active:border-gray-700">
                 <div className="flex items-center gap-2">
-                  <img
+                  <Image
                     className="rounded-full w-7 h-7"
                     src="https://pagedone.io/asset/uploads/1696229969.png"
                     alt="avatar"
+                    width={10}
+                    height={10}
                   />
                   <div className="grid gap-1">
                     <h5 className="text-[10px] text-white transition-all duration-500  group-hover:text-white swiper-slide-active:text-white">
