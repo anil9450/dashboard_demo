@@ -1,7 +1,11 @@
 "use client";
 
 import React from "react";
-import ReactApexChart from "react-apexcharts";
+import dynamic from "next/dynamic";
+
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+  ssr: false,
+});
 
 const ChartTwo: React.FC = () => {
   const series = [
@@ -194,12 +198,14 @@ const ChartTwo: React.FC = () => {
 
       <div>
         <div id="chartTwo" className="-ml-3.5">
-          <ReactApexChart
-            options={options as any}
-            series={series}
-            type="bar"
-            height={150}
-          />
+          {typeof window !== "undefined" && (
+            <ReactApexChart
+              options={options as any}
+              series={series}
+              type="bar"
+              height={150}
+            />
+          )}
         </div>
       </div>
     </div>

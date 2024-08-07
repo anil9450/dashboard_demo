@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { MdGpsFixed } from "react-icons/md";
 import { IoIosArrowDropright } from "react-icons/io";

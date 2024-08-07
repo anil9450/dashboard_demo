@@ -1,13 +1,15 @@
 "use client";
-import { colors } from "@mui/material";
-import { ApexOptions } from "apexcharts";
 import React from "react";
-import ReactApexChart from "react-apexcharts";
+import dynamic from "next/dynamic";
+
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+  ssr: false,
+});
 
 const ChartThree: React.FC = () => {
   const series = [70, 30];
 
-  const options: ApexOptions = {
+  const options = {
     chart: {
       fontFamily: "Satoshi, sans-serif",
       type: "donut",
@@ -115,12 +117,15 @@ const ChartThree: React.FC = () => {
 
       <div className="">
         <div className="relative h-36 w-36">
-          <ReactApexChart
-            options={apexOptions.options as any}
-            series={apexOptions.series}
-            type="radialBar"
-            height=""
-          />
+          {typeof window !== "undefined" && (
+            <ReactApexChart
+              options={apexOptions.options as any}
+              series={apexOptions.series}
+              type="radialBar"
+              height=""
+            />
+          )}
+
           <p className="text-[6px] text-white ml-4">
             *The values here has been rounded off.
           </p>
